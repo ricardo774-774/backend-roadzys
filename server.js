@@ -3,7 +3,7 @@ const cors = require('cors');
 const app = express();
 const server = require('http').Server(app);
 
-const PORT = require('./config.js');
+const PORT = process.env.PORT || 3000;
 
 app.use(cors());
 
