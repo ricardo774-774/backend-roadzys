@@ -3,7 +3,7 @@ const cors = require('cors');
 const app = express();
 const server = require('http').Server(app);
 
-const PORT = process.env.PORT;
+const port = process.env.PORT;
 
 app.use(cors());
 
@@ -28,4 +28,4 @@ io.on('connection', (socket) => {
     });
 });
 
-server.listen(PORT, () => console.log('Todo Bien', PORT));
+server.listen(port, () => console.log('Todo Bien', port));
