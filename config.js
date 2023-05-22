@@ -1,6 +1,6 @@
 require('dotenv').config();
 
-const PORT = process.env.PORTRAILWAY || 3000;
+const PORT = process.env.PORTRAILWAY;
 
 
 module.exports = PORT;
