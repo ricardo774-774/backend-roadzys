@@ -9,7 +9,7 @@ app.use(cors());
 
 const io = require('socket.io')(server, {
     cors: {
-        origin: ['https://nimble-axolotl-ddafb5.netlify.app']
+        origin: ['http://localhost:4200']
     }
 });
 
